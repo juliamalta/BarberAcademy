@@ -12,7 +12,7 @@ function Footer({ rights }: FooterProps) {
                 <div className="flex flex-wrap items-center justify-center">
                     <div className="py-12">
                         <div className="items-center text-center">
-                            <p className='text-center items-center text-white'>navalha acadamy</p>
+                            <p className="items-center text-center text-white">navalha acadamy</p>
                         </div>
                     </div>
                 </div>
