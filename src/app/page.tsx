@@ -1,23 +1,7 @@
-import { CiMobile1 } from 'react-icons/ci'
-import { FaRegHeart } from 'react-icons/fa'
-import { FiGithub } from 'react-icons/fi'
-import { GoArrowUpRight } from 'react-icons/go'
-import { IoMdHeartEmpty } from 'react-icons/io'
-import { MdOutlineColorize } from 'react-icons/md'
-import { MdCode } from 'react-icons/md'
-import { MdOutlineGroups } from 'react-icons/md'
-import { TbWorld } from 'react-icons/tb'
-import { TbCurrentLocation } from 'react-icons/tb'
-
 import AboutUs1 from '@/components/sections/AboutUs/AboutUs1'
-import { Cards1, Cards2 } from '@/components/sections/Cards'
-import Cards3 from '@/components/sections/Cards/Cards3'
+import { Cards1 } from '@/components/sections/Cards'
 import Contact from '@/components/sections/Contact/Contact'
-import Faq1 from '@/components/sections/Faqs/Faq1'
 import { HeroSection } from '@/components/sections/hero-section'
-import Chat from '@/components/sections/Chat/Chat'
-import TestEnv from '@/components/core/AgentIA/teste'
-import { Highlighter } from '@/components/magicui/highligth'
 import AboutUs2 from '@/components/sections/AboutUs/AboutUs2'
 import { Graphic } from '@/components/core/Icons/graphic'
 import { School } from '@/components/core/Icons/school'
@@ -51,7 +35,7 @@ export default function Home() {
                             iconBgColor: '#F15B29',
                         },
                         {
-                            icon: <School/>,
+                            icon: <School />,
                             title: 'Experiencia & Especialização',
                             text: 'Barbeiros profissionais investem em aprimorar habilidades em cortes de cabelo, barba e cuidados com a pele, diferenciando-se no mercado e justificando preços mais altos.',
                             iconBgColor: '#F15B29',
