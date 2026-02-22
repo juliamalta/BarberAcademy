@@ -14,7 +14,7 @@ function Features1({ title, text1, features }: FeaturesProps) {
                             </div>
                         </div>
                         <div className="flex flex-col items-center justify-center gap-8">
-                            <p className="text-color-shady text-center text-base font-normal">{text1}</p>
+                            <p className="text-center text-base font-normal text-color-shady">{text1}</p>
                         </div>
                     </div>
                 </div>

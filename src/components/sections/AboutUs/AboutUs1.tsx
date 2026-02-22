@@ -14,7 +14,7 @@ function AboutUs1({ title, text1, text2 }: AboutProps) {
                         </div>
                     </div>
                     <div className="flex flex-col items-center justify-center gap-8">
-                        <p className="text-color-shady text-center text-base font-normal">{text1}</p>
+                        <p className="text-center text-base font-normal text-color-shady">{text1}</p>
                         <p className="text-base font-normal text-color-storm">{text2}</p>
                     </div>
                 </div>
