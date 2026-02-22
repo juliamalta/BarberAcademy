@@ -1,7 +1,8 @@
+import Image from 'next/image'
+
 import { CardWorkProps } from '@/components/core/CardPrimary/Card.types'
 
 import imgWork from '../../../../public/images/img2.png'
-import Image from 'next/image'
 function CardWork({ title, description, img, tag }: CardWorkProps) {
     return (
         <div className="flex flex-col rounded-2xl">

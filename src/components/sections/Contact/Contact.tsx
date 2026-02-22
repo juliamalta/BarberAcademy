@@ -2,12 +2,13 @@
 
 import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
+import { FaWhatsapp } from 'react-icons/fa'
 
+import { InteractiveHoverButton } from '@/components/magicui/Interactive-HoverButton'
 import { ContactProps } from '@/components/sections/Contact/Contact.types'
 import { Button } from '@/components/ui/button'
+
 import imgbg from '../../../../public/images/rodape.png'
-import { FaWhatsapp } from 'react-icons/fa'
-import { InteractiveHoverButton } from '@/components/magicui/Interactive-HoverButton'
 function Contact({ title, text, buttontext }: ContactProps) {
     return (
         <section>

@@ -1,14 +1,15 @@
 'use client'
 
+import { Link } from 'lucide-react'
+
 import { withAnimation } from '@/common/hocs'
 import { AnimatedTechBackground } from '@/components/animations/background/AnimatedTechBackground'
 import { NumberTicker } from '@/components/magicui/number-ticker'
 import { TypingAnimation } from '@/components/magicui/typing-animation'
 import { AboutProps } from '@/components/sections/AboutUs/AboutUs.types'
+import { Button } from '@/components/ui/button'
 
 import FeaturesImg1 from '../../../../public/images/barber.png'
-import { Button } from '@/components/ui/button'
-import { Link } from 'lucide-react'
 
 function AboutUs2({ title, text1, text2, about, titlePrimary }: AboutProps) {
     return (

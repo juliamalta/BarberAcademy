@@ -1,8 +1,8 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 import logo from '../../../../public/images/logo.png'
 import { FooterProps } from './Footer.types'
-import Image from 'next/image'
 
 function Footer({ rights }: FooterProps) {
     return (

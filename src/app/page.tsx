@@ -1,12 +1,12 @@
-import AboutUs1 from '@/components/sections/AboutUs/AboutUs1'
-import { Cards1 } from '@/components/sections/Cards'
-import Contact from '@/components/sections/Contact/Contact'
-import { HeroSection } from '@/components/sections/hero-section'
-import AboutUs2 from '@/components/sections/AboutUs/AboutUs2'
+import { Evolution } from '@/components/core/Icons/evolution'
 import { Graphic } from '@/components/core/Icons/graphic'
 import { School } from '@/components/core/Icons/school'
-import { Evolution } from '@/components/core/Icons/evolution'
+import AboutUs1 from '@/components/sections/AboutUs/AboutUs1'
+import AboutUs2 from '@/components/sections/AboutUs/AboutUs2'
+import { Cards1 } from '@/components/sections/Cards'
+import Contact from '@/components/sections/Contact/Contact'
 import Features1 from '@/components/sections/Features/Features1'
+import { HeroSection } from '@/components/sections/hero-section'
 
 export default function Home() {
     return (

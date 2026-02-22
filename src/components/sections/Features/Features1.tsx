@@ -1,6 +1,7 @@
-import { FeaturesProps } from '@/components/sections/Features/Features.types'
-import features12 from '../../../../public/images/features.png'
 import CardFeatures from '@/components/core/CardFeatures/CardFeatures'
+import { FeaturesProps } from '@/components/sections/Features/Features.types'
+
+import features12 from '../../../../public/images/features.png'
 function Features1({ title, text1, features }: FeaturesProps) {
     return (
         <section id="features">

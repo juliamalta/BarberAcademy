@@ -1,7 +1,8 @@
+import { FaWhatsapp } from 'react-icons/fa'
+
 import Accordion from '@/components/core/Accordion/Accordion'
 import { BlurFade } from '@/components/magicui/blur-fade'
 import { FaqProps } from '@/components/sections/Faqs/Faqs.types'
-import { FaWhatsapp } from 'react-icons/fa'
 
 function Faq1({ faqs, title, description }: FaqProps) {
     return (

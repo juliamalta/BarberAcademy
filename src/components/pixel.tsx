@@ -1,7 +1,7 @@
 'use client'
 
-import Script from 'next/script'
 import { usePathname } from 'next/navigation'
+import Script from 'next/script'
 import { useEffect } from 'react'
 
 declare global {

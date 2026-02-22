@@ -16,10 +16,10 @@ const buttonVariants = cva(
                 ghost: 'hover:bg-accent hover:text-accent-foreground',
                 link: 'text-primary underline-offset-4 hover:underline',
                 herobutton:
-                    'bg-color-purble hover:bg-white hover:text-color-studio hover:border-2 hover:border-color-purble text-white',
+                    'bg-color-purble hover:text-color-studio hover:border-color-purble text-white hover:border-2 hover:bg-white',
 
                 herobuttonsecondary:
-                    'border-color-flamingo bg-color-flamingo rounded-xl hover:border-color-flamingo hover:text-color-flamingo  text-white hover:text-black border-2 ',
+                    'border-color-flamingo bg-color-flamingo hover:border-color-flamingo hover:text-color-flamingo rounded-xl  border-2 text-white hover:text-black ',
             },
             size: {
                 default: 'h-10 px-4 py-2',

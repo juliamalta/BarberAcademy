@@ -1,4 +1,5 @@
 import { CardProps } from '@/components/core/CardPrimary/Card.types'
+
 import img from '../../../../public/images/cardimh.png'
 function CardSecondary({ text, icon, title, tag }: CardProps) {
     return (

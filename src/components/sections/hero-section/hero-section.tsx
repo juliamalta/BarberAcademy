@@ -4,12 +4,13 @@ import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 
 import { AuroraText } from '@/components/magicui/aurora-text'
+import { HyperText } from '@/components/magicui/hyper'
+import { InteractiveHoverButton } from '@/components/magicui/Interactive-HoverButton'
 import { HeroProps } from '@/components/sections/hero-section/hero-section.types'
 import { AnimatedBackground } from '@/components/ui/animated-background'
 import { Button } from '@/components/ui/button'
-import { InteractiveHoverButton } from '@/components/magicui/Interactive-HoverButton'
 import { SpotlightBackground } from '@/components/ui/spotlight'
-import { HyperText } from '@/components/magicui/hyper'
+
 import videoteste from '../../../../public/images/videoteste.png'
 export function HeroSection({ title, desc, button1text, button2text, titlePrimary }: HeroProps) {
     return (
