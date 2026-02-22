@@ -6,6 +6,7 @@ import AboutUs2 from '@/components/sections/AboutUs/AboutUs2'
 import { Graphic } from '@/components/core/Icons/graphic'
 import { School } from '@/components/core/Icons/school'
 import { Evolution } from '@/components/core/Icons/evolution'
+import Features1 from '@/components/sections/Features/Features1'
 
 export default function Home() {
     return (
@@ -49,6 +50,7 @@ export default function Home() {
                     ]}
                 />
             </div>
+
             <AboutUs2
                 titlePrimary="O mestre da navalha"
                 title={
@@ -59,12 +61,27 @@ export default function Home() {
                 }
                 text1="Desde 2017, na barbearia, desenvolvi habilidades de cortes simples para esculturas meticulosas, buscando elevar a autoestima dos clientes. Compartilho meu conhecimento para formar novos talentos e elevar a excelência do setor. Cada serviço oferecido é uma promessa de qualidade, profissionalismo e cuidado pessoal. Junte-se a mim nessa jornada de transformação para se tornar um grande profissional na área da barbearia."
             />
-
-            <Contact
-                title="Sua tesoura tá parada.Seu potencial não precisa estar."
-                text="Vagas abertas agora. Entra antes que fechem"
-                buttontext="Garantir minha vaga"
-            />
+            <div className="bg-cover bg-center" style={{ backgroundImage: "url('/images/bg1.png')" }}>
+                <Features1
+                    title="O que você vai aprender do zero"
+                    text1="Cada módulo foi pensado pra te levar do começo ao corte profissional sem enrolação."
+                    features={[
+                        { title: 'Técnicas profissionais de cortes de cabelo e barba' },
+                        { title: 'Como aplicar as técnicas e começar a ser um profissional nessa área' },
+                        { title: 'Aulas presenciais com ambiente profissional' },
+                        { title: 'Divididas em 15 aulas' },
+                        { title: 'Certificado de Conclusão do Curso de Barbeiro Profissional' },
+                        { title: 'Postura no Trabalho' },
+                        { title: 'Técnicas de fidelização' },
+                        { title: 'Técnicas de venda' },
+                    ]}
+                />
+                <Contact
+                    title="Sua tesoura tá parada.Seu potencial não precisa estar."
+                    text="Vagas abertas agora. Entra antes que fechem"
+                    buttontext="Garantir minha vaga"
+                />
+            </div>
         </>
     )
 }

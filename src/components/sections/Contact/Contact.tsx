@@ -11,7 +11,7 @@ import { InteractiveHoverButton } from '@/components/magicui/Interactive-HoverBu
 function Contact({ title, text, buttontext }: ContactProps) {
     return (
         <section>
-            <div className="flex flex-col bg-color-wood py-6 sm:flex-row">
+            <div className="flex flex-col py-6 sm:flex-row">
                 <div className="mx-auto flex flex-col items-center justify-center gap-5 p-5 py-24 sm:p-8 lg:p-16">
                     <div className="flex flex-col items-center justify-center gap-8 lg:w-2/5">
                         <div>

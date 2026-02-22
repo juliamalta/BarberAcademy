@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 function Footer({ rights }: FooterProps) {
     return (
-        <section id="footer" className="overflow-hidden bg-color-wood">
+        <section id="footer" className="overflow-hidden bg-color-wood" >
             {/* Copyright and Social Media Links */}
             <div className="container mx-auto">
                 <div className="flex flex-wrap items-center justify-center">
