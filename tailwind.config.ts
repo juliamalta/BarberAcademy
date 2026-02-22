@@ -89,6 +89,7 @@ const config: Config = {
                     wild: 'var(--wild-sand-100)',
                     boulder: 'var(--boulder-500)',
                     flamingo: 'var(--flamingo-500)',
+                    shady: 'var(--shady-lady-400)',
                 },
                 muted: {
                     DEFAULT: 'hsl(var(--muted))',
