@@ -1,29 +1,30 @@
 import { CardProps } from '@/components/core/CardPrimary/Card.types'
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { Star } from 'lucide-react'
 
-import img from '../../../../public/images/cardimh.png'
-function CardSecondary({ text, icon, title, tag }: CardProps) {
+function CardSecondary({ text }: CardProps) {
     return (
-        <div className="transition-transform hover:scale-105">
+        <div className="h-90 rounded-xl bg-black bg-opacity-25 shadow-sm transition-transform hover:scale-105 hover:border-color-flamingo">
             <div>
-                <div
-                    className="flex size-full items-center justify-center gap-4 rounded-2xl p-12 shadow-sm md:h-60"
-                    style={{ backgroundColor: '#FFFFFF' }}>
-                    <div className="flex flex-col gap-5">
-                        <div className="flex items-center gap-3">
-                            <img src={img.src} alt="logo" />
-                            <p className="whitespace-nowrap font-semibold text-color-wood 2xl:text-3xl">{title}</p>
-                        </div>
-                        <div>
-                            <p className="text-sm text-color-storm sm:text-xs 2xl:text-sm">{text}</p>
-                        </div>
-                        <div className="mt-3 flex flex-wrap gap-4">
-                            {tag?.map((t, i) => (
-                                <div
-                                    className="flex h-5 items-center justify-center rounded-2xl border border-color-purble p-3"
-                                    key={i}>
-                                    <p className="text-center text-sm text-color-studio">{t}</p>
-                                </div>
-                            ))}
+                <div className="flex w-full flex-col gap-5 rounded-lg p-8 2xl:p-12">
+                    <div className="w-full">
+                        <p className="text-sm font-normal text-color-shady">{text}</p>
+                    </div>
+
+                    <div className="flex items-center gap-3">
+                        <Avatar>
+                            <AvatarImage src="https://github.com/shadcn.png" />
+                            <AvatarFallback>CN</AvatarFallback>
+                        </Avatar>
+
+                        <div className="text-white">
+                            <p>Caio R</p>
+
+                            <div className="mt-1 flex gap-1">
+                                {[...Array(5)].map((_, i) => (
+                                    <Star key={i} size={14} className="fill-color-flamingo text-color-flamingo" />
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>

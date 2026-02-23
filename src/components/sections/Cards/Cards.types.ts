@@ -1,7 +1,7 @@
 // CardSection.types.ts
 export interface CardData {
     icon?: JSX.Element
-    title: string
+    title?: string
     titleApp?: string
     text?: string
     progress?: string

@@ -11,11 +11,13 @@ function Accordion({ title, children, accordion }: AccordionProps) {
 
     return (
         <div onClick={() => setOpen(!open)} className="mb-8 flex cursor-pointer flex-col gap-8">
-            <div className="flex justify-between border-b-2 pb-4">
-                <h1 className="text-xl font-bold">{title}</h1>
-                {open ? <FaChevronUp color="#7039B7" size={20} /> : <FaChevronDown color="#7039B7" size={20} />}
+            <div
+                className="flex items-center justify-between rounded-xl border-2 p-4"
+                style={{ borderColor: '#585757' }}>
+                <h1 className="p-2 text-sm font-bold text-white md:text-xl">{title}</h1>
+                {open ? <FaChevronUp color="#F15B29" size={30} /> : <FaChevronDown color="#F15B29" size={30} />}
             </div>
-            {open && <div className="text-color-storm">{children}</div>}
+            {open && <div className="text-white">{children}</div>}
         </div>
     )
 }

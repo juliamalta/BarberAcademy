@@ -6,6 +6,7 @@ import './globals.css'
 import { Footer } from '@/components/sections/Footer'
 import { configs } from '@/configs'
 import { cn } from '@/lib/utils'
+import Contact from '@/components/sections/Contact/Contact'
 
 const spaceGrotesk = Space_Grotesk({
     subsets: ['latin'],
@@ -30,7 +31,19 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <html lang="en" className="scroll-smooth">
             <body className={cn('min-h-screen bg-background antialiased', inter.className)}>
                 {children}
-                <Footer rights="© 2026 Code Creative. Todos os direitos reservados." />
+                <div className="bg-cover bg-center" style={{ backgroundImage: "url('/images/bg1.png')" }}>
+                    <Contact
+                        title={
+                            <>
+                                <span className="font-bold text-color-flamingo"> Sua tesoura tá parada.</span>
+                                Seu potencial não precisa estar.
+                            </>
+                        }
+                        text="Vagas abertas agora. Entra antes que fechem"
+                        buttontext="Garantir minha vaga"
+                    />
+                    <Footer rights="© 2026 Code Creative. Todos os direitos reservados." />
+                </div>
             </body>
         </html>
     )
