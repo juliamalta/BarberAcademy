@@ -9,7 +9,7 @@ function Card1({ cards, title, desc }: CardSectionProps) {
     return (
         <section id="Serviços" className="py-16 sm:pb-24">
             <div className="container mx-auto items-center justify-center">
-                <div className="grid grid-cols-1 gap-8 sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-3">
+                <div className="grid grid-cols-1 gap-8 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3">
                     {cards.map((card, index) => (
                         <CardPrimary
                             key={index}

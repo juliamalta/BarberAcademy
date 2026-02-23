@@ -15,7 +15,7 @@ import videoteste from '../../../../public/images/videoteste.png'
 export function HeroSection({ title, desc, button1text, button2text, titlePrimary }: HeroProps) {
     return (
         <>
-            <section id="inicio" className="mx-auto bg-cover bg-center px-2 py-16 sm:py-44">
+            <section id="inicio" className="mx-auto bg-cover bg-center px-2 py-16 sm:py-24">
                 <div className="container flex flex-col gap-8">
                     <div className="flex flex-col items-center justify-center gap-8">
                         <div className="flex flex-col items-center justify-center gap-6">
