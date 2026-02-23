@@ -6,9 +6,7 @@ import { FaWhatsapp } from 'react-icons/fa'
 
 import { InteractiveHoverButton } from '@/components/magicui/Interactive-HoverButton'
 import { ContactProps } from '@/components/sections/Contact/Contact.types'
-import { Button } from '@/components/ui/button'
 
-import imgbg from '../../../../public/images/rodape.png'
 function Contact({ title, text, buttontext }: ContactProps) {
     return (
         <section>
@@ -28,7 +26,7 @@ function Contact({ title, text, buttontext }: ContactProps) {
                     </div>
                     <div className="flex flex-row items-center justify-center gap-4 sm:justify-normal">
                         <div className="justify-end lg:flex">
-                            <InteractiveHoverButton className="border-color-flamingo bg-color-flamingo text-center text-sm text-white hover:bg-white hover:text-color-studio">
+                            <InteractiveHoverButton className="border-color-flamingo bg-color-flamingo text-center text-sm text-white">
                                 <Link href="https://wa.me/5531996398460"> {buttontext}</Link>
                             </InteractiveHoverButton>
                         </div>

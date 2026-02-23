@@ -24,7 +24,11 @@ function Features1({ title, text1, features }: FeaturesProps) {
                     </div>
                     <div className="flex flex-col justify-between gap-8 lg:flex-row">
                         <div className="mx-auto flex w-full items-center justify-center sm:w-2/3 md:w-1/2 lg:w-2/5">
-                            <img src={features12.src} alt="img" className="w-full rounded-2xl bg-cover" />
+                            <img
+                                src={features12.src}
+                                alt="img"
+                                className="hidden w-full rounded-2xl bg-cover lg:block"
+                            />
                         </div>
                         <div className="flex flex-col justify-center gap-8">
                             {features.map((features, index) => (
