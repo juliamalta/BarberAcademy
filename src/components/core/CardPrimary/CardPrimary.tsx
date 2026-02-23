@@ -7,7 +7,7 @@ function CardPrimary({ text, icon, title }: CardProps) {
                 <div className="flex w-full flex-col items-center gap-5 rounded-lg p-8 2xl:p-12">
                     <div className="flex size-11 rounded-xl">{icon}</div>
                     <div>
-                        <h1 className="text-sm 2xl:text-base font-semibold text-white">{title}</h1>
+                        <h1 className="text-sm font-semibold text-white 2xl:text-base">{title}</h1>
                     </div>
                     <div className="w-full">
                         <p className="text-sm font-normal text-color-shady">{text}</p>
