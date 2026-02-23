@@ -8,7 +8,7 @@ import { CardSectionProps } from '@/components/sections/Cards/Cards.types'
 function Card2({ cards, title, desc }: CardSectionProps) {
     return (
         <section id="Serviços" className="py-16 sm:pb-24">
-            <div className="container mx-auto items-center justify-center flex flex-col gap-8">
+            <div className="container mx-auto flex flex-col items-center justify-center gap-8">
                 <div className="w-full">
                     <p className="text-center text-4xl font-semibold text-white">{title}</p>
                 </div>

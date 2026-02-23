@@ -19,7 +19,9 @@ function Footer({ rights }: FooterProps) {
 
                         <div className="flex flex-col gap-3">
                             <div className="flex items-center md:justify-end">
-                                <a className="flex h-11 items-center justify-center gap-3 rounded-xl" href="">
+                                <a
+                                    className="flex h-11 items-center justify-center gap-3 rounded-xl"
+                                    href="https://www.codecreative.com.br">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         fill="#FFFFFF"
