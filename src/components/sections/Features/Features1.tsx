@@ -4,6 +4,7 @@ import { FeaturesProps } from '@/components/sections/Features/Features.types'
 import features12 from '../../../../public/images/features.png'
 import { Button } from '@/components/ui/button'
 import { Link } from '@radix-ui/react-navigation-menu'
+import { InteractiveHoverButton } from '@/components/magicui/Interactive-HoverButton'
 function Features1({ title, text1, features }: FeaturesProps) {
     return (
         <section id="features">
@@ -29,6 +30,15 @@ function Features1({ title, text1, features }: FeaturesProps) {
                             {features.map((features, index) => (
                                 <CardFeatures key={index} title={features.title} />
                             ))}
+                        </div>
+                    </div>
+                    <div className="flex items-center justify-center">
+                        <div className="justify-end lg:flex">
+                            <Button variant="herobuttonsecondary" size="hero" asChild className="text-sm">
+                                <a href="https://wa.me/5531996398460" target="_blank" rel="noopener noreferrer">
+                                    Estou interessado
+                                </a>
+                            </Button>
                         </div>
                     </div>
                 </div>
