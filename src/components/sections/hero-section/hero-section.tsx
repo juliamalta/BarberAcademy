@@ -26,13 +26,13 @@ export function HeroSection({ title, desc, button1text, button2text, titlePrimar
                                 </Link>
                             </div>
 
-                            <h1 className="font-regular w-full text-center text-3xl text-white md:text-6xl 2xl:w-2/3">
+                            <h1 className="font-regular w-full text-center text-3xl text-white md:text-6xl 2xl:w-1/2">
                                 {title}
                             </h1>
                             <p className="text-md text-center text-color-shady sm:text-base 2xl:w-2/5">{desc}</p>
                         </div>
                         <div className="flex items-center justify-center">
-                            <div className="w-2/3">
+                            <div className="w-full sm:w-2/3">
                                 <img src={videoteste.src} alt="img" className="w-full rounded-2xl bg-cover" />
                             </div>
                         </div>
