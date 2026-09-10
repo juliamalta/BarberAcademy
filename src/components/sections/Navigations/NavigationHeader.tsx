@@ -4,7 +4,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import * as React from 'react'
 import { useState } from 'react'
-import { FaWhatsapp } from 'react-icons/fa'
 
 import { Button } from '@/components/ui/button'
 import {
@@ -18,6 +17,7 @@ import {
 import { cn } from '@/lib/utils'
 
 import { NavigationHeaderProps } from './NavigationHeader.types'
+import { FaWhatsapp } from 'react-icons/fa'
 
 const ListItem = React.forwardRef<React.ElementRef<'a'>, React.ComponentPropsWithoutRef<'a'>>(
     ({ className, title, ...props }, ref) => {
@@ -49,7 +49,7 @@ function NavigationHeader({ logo, navs, buttonLink }: NavigationHeaderProps) {
     }
 
     return (
-        <section className="sticky top-0 z-30 bg-color-wood">
+        <section className="sticky top-0 z-30 bg-[#111111]">
             <nav className="container flex items-center justify-between py-6">
                 <div className="flex items-start">
                     <Link className="block max-w-max" href="/">
@@ -69,7 +69,7 @@ function NavigationHeader({ logo, navs, buttonLink }: NavigationHeaderProps) {
                                                 <NavigationMenuLink asChild>
                                                     <Link
                                                         href={link}
-                                                        className="text-base text-white hover:text-color-boulder">
+                                                        className="hover:text-color-boulder text-base text-white">
                                                         {text}
                                                     </Link>
                                                 </NavigationMenuLink>
@@ -83,14 +83,11 @@ function NavigationHeader({ logo, navs, buttonLink }: NavigationHeaderProps) {
                 </div>
                 <div>
                     <div className="hidden justify-end lg:flex">
-                        <a
-                            href="https://wa.me/5531996398460"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="pointer-events-auto relative flex w-full items-center justify-center gap-3 rounded-full bg-color-purble px-5 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-color-studio sm:w-fit sm:text-base 2xl:text-base">
-                            <FaWhatsapp className="text-xl sm:text-2xl" />
+                        <Link
+                            href="#contato"
+                            className="hover:text-color-studio pointer-events-auto relative flex w-full items-center justify-center gap-3 rounded-full bg-color-denim px-5 py-3 text-sm font-semibold text-white transition hover:bg-white sm:w-fit sm:text-base 2xl:text-base">
                             <span className="whitespace-nowrap text-sm">Fale conosco</span>
-                        </a>
+                        </Link>
                     </div>
                 </div>
 
@@ -117,7 +114,7 @@ function NavigationHeader({ logo, navs, buttonLink }: NavigationHeaderProps) {
 
             {/* Mobile Menu */}
             <div
-                className={`fixed inset-y-0 left-0 z-50 w-4/6 max-w-xs bg-color-wood transition-transform duration-300 ease-in-out${
+                className={`fixed bottom-0 left-0 top-0 z-50 w-4/6 max-w-xs transform bg-color-codgray transition-transform duration-300 ease-in-out ${
                     isNavOpen ? 'translate-x-0' : '-translate-x-full'
                 }`}>
                 <nav className="relative flex h-full flex-col justify-between overflow-y-auto p-6">
@@ -134,7 +131,7 @@ function NavigationHeader({ logo, navs, buttonLink }: NavigationHeaderProps) {
                                 <li key={`nav-mobile-${index}`}>
                                     {isLastItem ? (
                                         <Button
-                                            className="rounded-md bg-purple-700 px-6 py-2 text-white hover:bg-purple-800"
+                                            className="rounded-md bg-color-denim px-6 py-2 text-white hover:bg-color-denim"
                                             onClick={() => (window.location.href = link)}>
                                             {text}
                                         </Button>
@@ -149,7 +146,7 @@ function NavigationHeader({ logo, navs, buttonLink }: NavigationHeaderProps) {
                                                 const el = document.getElementById(id)
                                                 if (el) el.scrollIntoView({ behavior: 'smooth' })
                                             }}
-                                            className="block rounded-md px-4 py-3 font-medium text-gray-300 hover:bg-color-studio hover:text-white">
+                                            className="hover:bg-color-studio block rounded-md px-4 py-3 font-medium text-gray-300 hover:text-white">
                                             {text}
                                         </Link>
                                     )}

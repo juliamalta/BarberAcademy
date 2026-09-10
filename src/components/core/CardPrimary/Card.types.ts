@@ -3,7 +3,7 @@ export type CardProps = {
     text?: string
     title: string | React.ReactNode
     desc?: string
-    icon?: React.ReactNode
+    number?: string
     img?: string
     iconBgColor?: string
     progress?: string
@@ -17,4 +17,6 @@ export type CardWorkProps = {
     img?: string
     description?: string
     tag: string[]
+    link?: string
+    buttonText?: string
 }
