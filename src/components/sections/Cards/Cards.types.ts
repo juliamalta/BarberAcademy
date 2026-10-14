@@ -1,7 +1,7 @@
 // CardSection.types.ts
 export interface CardData {
-    number?: string
-    title: string
+    icon?: JSX.Element
+    title?: string
     titleApp?: string
     text?: string
     progress?: string
@@ -11,8 +11,6 @@ export interface CardData {
     desc?: string
     img?: string
     tag?: string[]
-    link?: string
-    buttonText?: string
 }
 
 export interface CardSectionProps {

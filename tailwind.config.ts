@@ -90,10 +90,6 @@ const config: Config = {
                     boulder: 'var(--boulder-500)',
                     flamingo: 'var(--flamingo-500)',
                     shady: 'var(--shady-lady-400)',
-                    codgray: 'var(--cod-gray-950)',
-                    malachite: 'var(--malachite-500)',
-                    woodsmoke: 'var(--woodsmoke-900)',
-                    clay: 'var(--clay-ash-300)',
                 },
                 muted: {
                     DEFAULT: 'hsl(var(--muted))',
