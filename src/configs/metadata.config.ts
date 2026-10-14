@@ -1,21 +1,21 @@
 export const metadataConfig = {
-    title: 'Movi',
+    title: 'Navalha Academy',
     description:
         'O curso que transforma iniciantes em barbeiros requisitados sem precisar de anos de salão pra provar seu valor.',
     openGraph: {
-        siteName: 'Movi',
+        siteName: 'Navalha Academy',
         images: [
             {
                 url: '/img/og-image.jpg',
                 width: 1200,
                 height: 630,
-                alt: 'Movi',
+                alt: 'Navalha Academy',
             },
         ],
     },
     twitter: {
         card: 'summary_large_image',
-        site: '@Movi',
+        site: '@NavalhaAcademy',
     },
     icons: {
         icon: [

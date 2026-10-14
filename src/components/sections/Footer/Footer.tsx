@@ -6,11 +6,17 @@ import Image from 'next/image'
 
 function Footer({ rights }: FooterProps) {
     return (
-        <section id="footer" className="bg-color-codgray overflow-hidden">
+        <section id="footer" className="overflow-hidden bg-color-wood">
             {/* Copyright and Social Media Links */}
             <div className="container mx-auto">
                 <div className="flex flex-wrap items-center justify-center border-t border-color-boulder">
                     <div className="md-gap-0 container flex w-full justify-between gap-10 py-12">
+                        <div className="flex items-start">
+                            <Link className="block max-w-max" href="/">
+                                <Image width={172} height={73} src={logo} alt="logo" />
+                            </Link>
+                        </div>
+
                         <div className="flex flex-col gap-3">
                             <div className="flex items-center md:justify-end">
                                 <a

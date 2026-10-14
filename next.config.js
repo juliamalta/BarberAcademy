@@ -35,7 +35,6 @@ const isExport = process.env.NEXT_EXPORT === 'true'
 const nextConfig = {
     output: isExport ? 'export' : undefined,
     reactStrictMode: true,
-    swcMinify: true,
     images: {
         unoptimized: true, // desabilita otimização de imagens
     },

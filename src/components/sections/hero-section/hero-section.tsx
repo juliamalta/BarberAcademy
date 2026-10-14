@@ -1,93 +1,49 @@
 'use client'
 
+import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 
+import { AuroraText } from '@/components/magicui/aurora-text'
 import { HyperText } from '@/components/magicui/hyper'
 import { InteractiveHoverButton } from '@/components/magicui/Interactive-HoverButton'
 import { HeroProps } from '@/components/sections/hero-section/hero-section.types'
+import { AnimatedBackground } from '@/components/ui/animated-background'
 import { Button } from '@/components/ui/button'
-
-export function HeroSection({
-    title,
-    desc,
-    button1text,
-    button2text,
-    titlePrimary,
-    tag,
-}: HeroProps) {
+import { SpotlightBackground } from '@/components/ui/spotlight'
+import Image from 'next/image'
+import videoteste from '../../../../public/images/videoteste.png'
+import logo from '../../../../public/images/logo.png'
+export function HeroSection({ title, desc, button1text, button2text, titlePrimary }: HeroProps) {
     return (
-        <section
-            id="inicio"
-            className="relative mx-auto overflow-hidden px-2 py-24 sm:py-24"
-        >
-            {/* Background com opacidade */}
-            <div
-                className="absolute inset-0 bg-cover bg-center opacity-30"
-                style={{
-                    backgroundImage: "url('/images/bgof.png')",
-                }}
-            />
+        <>
+            <section id="inicio" className="mx-auto bg-cover bg-center px-2 py-16 sm:py-24">
+                <div className="container flex flex-col gap-8">
+                    <div className="flex flex-col items-center justify-center gap-8">
+                        <div className="flex flex-col items-center justify-center gap-6">
+                            <div className="flex items-start">
+                                <Link className="block max-w-max" href="/">
+                                    <Image width={172} height={73} src={logo} alt="logo" />
+                                </Link>
+                            </div>
 
-            {/* Conteúdo */}
-            <div className="container relative z-10 flex flex-col gap-6">
-                <div className="flex">
-                    <HyperText
-                        style={{
-                            backgroundColor:
-                                'color-mix(in srgb, var(--malachite-500) 10%, transparent)',
-                        }}
-                        className="text-color-malachite rounded-2xl px-4 text-base font-semibold"
-                    >
-                        {titlePrimary}
-                    </HyperText>
-                </div>
-
-                <h1 className="font-regular w-full text-3xl text-white md:text-6xl lg:w-2/3">
-                    {title}
-                </h1>
-
-                <p className="text-md text-color-clay sm:text-base lg:w-2/5">
-                    {desc}
-                </p>
-
-                <div className="flex w-full flex-col gap-3 sm:flex-row lg:gap-5">
-                    <div className="flex w-full flex-col gap-3 sm:flex-row">
-                        <InteractiveHoverButton
-                            className="border-color-malachite bg-color-malachite rounded-2xl text-center text-sm text-black hover:text-white"
-                        >
-                            <Link href="https://wa.me/5531996398460">
-                                {button1text}
-                            </Link>
-                        </InteractiveHoverButton>
-
-                        <Button
-                            variant="herobuttonsecondary"
-                            size="hero"
-                            asChild
-                            className="rounded-2xl text-sm"
-                        >
-                            <Link href="#trabalho">
-                                {button2text}
-                            </Link>
-                        </Button>
+                            <h1 className="font-regular w-full text-center text-3xl text-white md:text-6xl 2xl:w-1/2">
+                                {title}
+                            </h1>
+                            <p className="text-md text-center text-color-shady sm:text-base 2xl:w-2/5">{desc}</p>
+                        </div>
+                        <div className="flex items-center justify-center">
+                            <div className="w-full sm:w-2/3">
+                                <img src={videoteste.src} alt="img" className="w-full rounded-2xl bg-cover" />
+                            </div>
+                        </div>
+                        <div className="flex flex-col gap-3 sm:flex-row">
+                            <Button variant="herobuttonsecondary" size="hero" asChild className="text-sm">
+                                <Link href="#trabalho"> {button2text}</Link>
+                            </Button>
+                        </div>
                     </div>
                 </div>
-
-                <div className="flex w-full flex-col gap-8 sm:flex-row">
-                    {tag.map((tags, index) => (
-                        <div
-                            key={index}
-                            className="flex items-center gap-2"
-                        >
-                            {tags.icon}
-
-                            <p className="text-md text-white">
-                                {tags.text}
-                            </p>
-                        </div>
-                    ))}
-                </div>
-            </div>
-        </section>
+            </section>
+        </>
     )
 }

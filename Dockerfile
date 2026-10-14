@@ -10,8 +10,8 @@ RUN yarn install --frozen-lockfile
 # Copia todo o projeto
 COPY . ./
 
-# Expõe a porta que o servidor usa
-EXPOSE 3001
+# Expõe a porta padrão do Next.js
+EXPOSE 3000
 
-# Comando para rodar o servidor Express
-CMD ["node", "server.js"]
+# Inicia a aplicação Next.js em produção
+CMD ["yarn", "start"]
